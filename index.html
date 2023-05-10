@@ -23,6 +23,8 @@ The Lighthouse Collective
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Contact Form reCaptcha-->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </head>
     <body id="page-top">
 
@@ -93,15 +95,16 @@ The Lighthouse Collective
                     <!-- Episode 3-->
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1"
-                                ><div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            <a class="portfolio-link" data-toggle="modal" href="#episodeModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-clock fa-3x"></i></div>
+                                    <!--<div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>-->
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/01-thumbnail.jpg" alt=""
-                            /></a>
+                                <img class="img-fluid d-block mx-auto episode-thumbnail" src="assets/img/episodes/03-cover.jpg" alt="cover photo for episode 3"/>
+                            </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Episode 3</div>
-                                <div class="portfolio-caption-subheading text-muted">Home Cultivation</div>
+                                <div class="portfolio-caption-title">Home Cultivation</div>
                             </div>
                         </div>
                     </div>
@@ -109,15 +112,16 @@ The Lighthouse Collective
                     <!-- Episode 2-->
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2"
-                                ><div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            <a class="portfolio-link" data-toggle="modal" href="#episodeModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-clock fa-3x"></i></div>
+                                    <!--<div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>-->
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/02-thumbnail.jpg" alt=""
-                            /></a>
+                                <img class="img-fluid d-block mx-auto episode-thumbnail" src="assets/img/episodes/02-cover.jpg" alt="cover photo for episode 2"/>
+                            </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Episode 2</div>
-                                <div class="portfolio-caption-subheading text-muted">Mycoremediation</div>
+                                <div class="portfolio-caption-title">The Magic of Mycoremediation</div>
                             </div>
                         </div>
                     </div>
@@ -125,19 +129,19 @@ The Lighthouse Collective
                     <!-- Episode 1-->
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3"
-                                ><div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            <a class="portfolio-link" data-toggle="modal" href="#episodeModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-clock fa-3x"></i></div>
+                                    <!--<div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>-->
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/03-thumbnail.jpg" alt=""
-                            /></a>
+                                <img class="img-fluid d-block mx-auto episode-thumbnail" src="assets/img/episodes/01-cover.jpg" alt="cover photo for episode 1"/>
+                            </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Episode 1</div>
-                                <div class="portfolio-caption-subheading text-muted">Intro & Plans</div>
+                                <div class="portfolio-caption-title">Intro & Plans</div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -152,27 +156,32 @@ The Lighthouse Collective
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="" />
+                            <img class="mx-auto rounded-circle" src="assets/img/team/dylan.jpg" alt="dylan photo"/>
                             <h4>Dylan Todd</h4>
                             <p class="text-muted">Host</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://dylantodd.us/" target="_blank"><i class="fas fa-globe"></i></a><a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/dylan-todd/" target="blank"><i class="fab fa-linkedin-in"></i></a><a class="btn btn-dark btn-social mx-2" href="https://twitter.com/dm7odd"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="" />
+                            <img class="mx-auto rounded-circle" src="assets/img/team/kyle.jpg" alt="kyle photo"/>
                             <h4>Kyle Taylor</h4>
                             <p class="text-muted">Host</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.twitch.tv/mushymagee" target="_blank"><i class="fab fa-twitch"></i></a><a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/dylan-todd/" target="blank"><i class="fab fa-linkedin-in"></i></a><a class="btn btn-dark btn-social mx-2" href=""><i class="fab fa-facebook-f"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">As passionate fungi enthusiasts, we've spent countless hours learning, exploring, and engaging in conversations with experts to bring you the most fascinating stories and insights from the world of fungi. Join us on this exciting journey.</p></div>
-                </div>
+                    <div class="col text-center">
+                        <h3 class="section-subheading text-muted">
+                            As passionate fungi enthusiasts, we've spent countless hours learning, exploring, and engaging in conversations with experts to bring you the most fascinating stories and insights from the world of fungi.<br>
+                            <br>
+                            <span class="exciting-journey">Join us on this exciting journey!</span>
+                        </h3>
+                    </div>
+                </div>                
             </div>
         </section>
-
 
         <!-- Contact-->
         <section class="page-section" id="contact">
@@ -182,18 +191,18 @@ The Lighthouse Collective
                     <h3 class="section-subheading text-white">Spore Your Thoughts: Get in Touch with the Hyphal Knot Crew!</h3>
                 </div>
                 <form id="contactForm" name="sentMessage" novalidate="novalidate">
-                    <div class="row align-items-stretch mb-5">
+                    <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name." />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address." />
+                                <input class="form-control" id="subject" type="text" placeholder="Subject *" required="required" data-validation-required-message="Please enter a subject." />
                                 <p class="help-block text-danger"></p>
                             </div>
-                            <div class="form-group mb-md-0">
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number." />
+                            <div class="form-group">
+                                <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address." />
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -204,6 +213,11 @@ The Lighthouse Collective
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="g-recaptcha d-inline-block my-3" data-sitekey="your-recaptcha-site-key"></div>
+                        </div>
+                    </div>
                     <div class="text-center">
                         <div id="success"></div>
                         <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Send Message</button>
@@ -211,39 +225,49 @@ The Lighthouse Collective
                 </form>
             </div>
         </section>
+
         <!-- Footer-->
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-4 text-lg-left">Powered by <a href="https://lighthousecollective.net" target="_blank"><b>The Lighthouse Collective</b></a>, © 2023</div>
                     <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a><a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/hyphalKnotRadio" target="blank"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-spotify" target="blank"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-medium-m" target="blank"></i></a>
                     </div>
-                    <div class="col-lg-4 text-lg-right"><a class="mr-3" href="#!">Privacy Policy</a><a href="#!">Terms of Use</a></div>
+                    <div class="col-lg-4 text-lg-right">
+                        Sponsored by <a href="https://hyphalhealth.com" target="_blank"><b>Hyphal Health</b></a> and <a href="https://midmountainmycology.com" target="_blank"><b>M<sup>3</sup> Labs</b></a>
+                    </div>
                 </div>
             </div>
         </footer>
 
-        <!-- Portfolio Modals--><!-- Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+
+
+        <!-- EPISODE MODALS-->
+
+        <!-- Episode 3 -->
+        <div class="portfolio-modal modal fade" id="episodeModal3" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <span class="episode-number">Episode 3</span>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/01-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Threads</li>
-                                        <li>Category: Illustration</li>
+                                    <h2 class="text-uppercase modal-title">Foraging for Wild Mushrooms</h2>
+                                    <p class="item-intro text-muted category-fungal-forays">A Beginner's Guide to Safely Harvesting Nature's Treasures</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/episodes/03-full.jpg" alt="episode 3 full image" />
+                                    <p>Ready to embark on your own fungal foray? This episode will guide you through the basics of wild mushroom foraging.</p>
+                                    <p>We'll share tips on how to identify common edible species, avoid toxic look-alikes, and practice responsible harvesting techniques to ensure a safe and sustainable experience.</p>
+                                    <ul class="list-inline text-center">
+                                        <li><strong>Release:</strong> June 25, 2023</li>
+                                        <li><strong>Category:</strong> Fungal Forays</li>
+                                        <li><strong>Duration:</strong> TBD</li>
                                     </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
+                                    <a href="https://www.example.com" class="btn btn-primary" role="button" target="_blank"><i class="fas fa-external-link-alt mr-1"></i>COMING SOON</a>
                                 </div>
                             </div>
                         </div>
@@ -252,26 +276,27 @@ The Lighthouse Collective
             </div>
         </div>
 
-        <!-- Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <!-- Episode 2 -->
+        <div class="portfolio-modal modal fade" id="episodeModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <span class="episode-number">Episode 2</span>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/02-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Explore</li>
-                                        <li>Category: Graphic Design</li>
+                                    <h2 class="text-uppercase modal-title">The Magic of Mycoremediation</h2>
+                                    <p class="item-intro text-muted category-eco-innovations">Harnessing Fungi to Heal Our Planet</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/episodes/02-full.jpg" alt="episode 2 full image" />
+                                    <p>Join us as we explore the incredible power of mycoremediation – the use of fungi to break down and remove pollutants from the environment.</p>
+                                    <p>Learn how these extraordinary organisms can help tackle issues like oil spills, plastic waste, and contaminated soil, offering innovative solutions for a cleaner, greener future.</p>
+                                    <ul class="list-inline text-center">
+                                        <li><strong>Release:</strong> June 11, 2023</li>
+                                        <li><strong>Category:</strong> Eco-Innovations
+                                        <li><strong>Duration:</strong> TBD</li>
                                     </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
+                                    <a href="https://www.example.com" class="btn btn-primary" role="button" target="_blank"><i class="fas fa-external-link-alt mr-1"></i>COMING SOON</a>
                                 </div>
                             </div>
                         </div>
@@ -280,110 +305,27 @@ The Lighthouse Collective
             </div>
         </div>
 
-        <!-- Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <!-- Episode 1 -->
+        <div class="portfolio-modal modal fade" id="episodeModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <span class="episode-number">Episode 1</span>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/03-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Finish</li>
-                                        <li>Category: Identity</li>
+                                    <h2 class="text-uppercase modal-title">Intro & Plans</h2>
+                                    <p class="item-intro text-muted category-general">Join Our Journey Into the Fascinating World of Fungi</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/episodes/01-full.jpg" alt="episode 1 full image" />
+                                    <p>Welcome to the first episode of The Hyphal Knot podcast, where we'll be introducing you to the captivating realm of fungi, exploring their potential to transform our world.</p>
+                                    <p>Join us as we delve into the myriad ways mushrooms can impact health, environment, and industry.</p>
+                                    <ul class="list-inline text-center">
+                                        <li><strong>Release:</strong> May 28, 2023</li>
+                                        <li><strong>Category:</strong> General</li>
+                                        <li><strong>Duration:</strong> 30 minutes</li>
                                     </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/04-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Lines</li>
-                                        <li>Category: Branding</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/05-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Southwest</li>
-                                        <li>Category: Website Design</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/06-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Window</li>
-                                        <li>Category: Photography</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
+                                    <a href="https://www.example.com" class="btn btn-primary" role="button" target="_blank"><i class="fas fa-external-link-alt mr-1"></i>COMING SOON</a>
                                 </div>
                             </div>
                         </div>
@@ -402,5 +344,16 @@ The Lighthouse Collective
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
+        <!-- ANALYTICS | Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQGM23X005"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-TQGM23X005');
+        </script>
+
     </body>
 </html>

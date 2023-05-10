@@ -10074,6 +10074,23 @@ img::-moz-selection {
   border-radius: 100%;
 }
 
+.btn-social:hover {
+  background-color: var(--darkGoldenRod);
+  border-color: var(--darkGoldenRod);
+}
+
+.exciting-journey {
+  font-weight: bold;
+  color: var(--darkGoldenRod);
+  display: block;
+}
+
+.episode-thumbnail {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -10219,10 +10236,43 @@ header.masthead .masthead-heading {
   }
 }
 
+.episode-number {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.modal-title {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.category-general {
+  color: #fed136;
+}
+
+.category-fungal-forays {
+  color: #fec503;
+}
+
+.category-eco-innovations {
+  color: #feaa00;
+}
+
 #portfolio .portfolio-item {
   max-width: 25rem;
   margin-left: auto;
   margin-right: auto;
+}
+.portfolio-caption-title {
+  font-size: 1.1em;
+  font-weight: 600;
+  line-height: 1.4;
 }
 #portfolio .portfolio-item .portfolio-link {
   position: relative;
