@@ -3,41 +3,78 @@
 <!--
 index.html
 Created 04.20.23
-Updated 09.13.25
+Updated 10.15.25
 Faro Digital Studio
 -->
 
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Primary SEO -->
-    <title>The Hyphal Knot — Fungi-First Podcast on Mushrooms & Mycelium</title>
-    <meta name="description" content="Under the surface, a living network is changing how we grow, heal, and build. The Hyphal Knot dives into mushrooms and mycelium—cultivation, foraging, bio-applications, ecology—and the people pushing mycology forward." />
+    <title>The Hyphal Knot | Fungi-First Podcast on Mushrooms & Mycelium</title>
+    <meta
+      name="description"
+      content="The Hyphal Knot explores mushrooms and mycelium across cultivation, foraging, ecology, materials, nutrition, cognition, and policy. Conversations with growers, researchers, and makers."
+    />
     <meta name="author" content="Faro Digital Studio" />
+    <link rel="canonical" href="https://thehyphalknot.com/" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="keywords"
+      content="mushroom podcast,mycology,podcast,mycelium,cultivation,foraging,psilocybin,functional mushrooms,gourmet mushrooms,biotech,myco-materials,ecology,policy,ethics"
+    />
 
     <!-- Open Graph / Twitter -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="The Hyphal Knot — Fungi-First Podcast" />
-    <meta property="og:description" content="Fungi-first conversations: cultivation, foraging, ecology, biotech, culture, and the networks underneath it all." />
+    <meta
+      property="og:title"
+      content="The Hyphal Knot | Fungi-First Podcast"
+    />
+    <meta
+      property="og:description"
+      content="Unraveling the mycelial maze, one knot at a time. Episodes on cultivation, foraging, materials, health, and policy."
+    />
     <meta property="og:image" content="assets/img/episodes/01-cover.jpg" />
+    <meta property="og:url" content="https://thehyphalknot.com/" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@hyphalKnotRadio" />
-    <meta name="twitter:title" content="The Hyphal Knot — Fungi-First Podcast" />
-    <meta name="twitter:description" content="Mushrooms and mycelium as lens and subject—talks with growers, foragers, scientists, and makers." />
+    <meta name="twitter:title" content="The Hyphal Knot | Fungi-First Podcast" />
+    <meta
+      name="twitter:description"
+      content="Conversations across cultivation, health, ecology, and tech. Short-form on socials, full shows on YouTube."
+    />
     <meta name="twitter:image" content="assets/img/episodes/01-cover.jpg" />
 
     <link rel="icon" type="image/x-icon" href="assets/img/favIcon.png" />
 
-    <!-- Font Awesome (defer to avoid blocking) -->
-    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous" defer></script>
+    <!-- Font Awesome (free v5, deferred) -->
+    <script
+      src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
 
     <!-- Google Fonts (kept) -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
@@ -45,30 +82,87 @@ Faro Digital Studio
     <!-- Minimal focus-visible helper (non-breaking) -->
     <style>
       :focus { outline: 2px solid #d49b0c; outline-offset: 2px; }
-      .skip-link { position: absolute; top: -40px; left: 0; background: #000; color: #fff; padding: 8px 12px; z-index: 1000; }
+      .skip-link {
+        position: absolute; top: -40px; left: 0; background: #000; color: #fff;
+        padding: 8px 12px; z-index: 1000;
+      }
       .skip-link:focus { top: 0; }
       .episode-thumbnail { width: 100%; height: auto; }
       .cta-row .btn { margin: 0 .25rem .5rem; }
       /* slightly taller CTA below episodes */
       .cta-under-episodes .btn { padding-top: .9rem; padding-bottom: .9rem; }
+
+      /* Brand gold helper */
+      .hk-gold { color: #D49B0C; }
+
+      /* Icon style refresh: minimal, now in brand gold */
+      .topic-icon { font-size: 3rem; color: #D49B0C; }
+      .topic h3 { margin-top: .75rem; }
+
+      /* Subtle section separators as requested */
+      .section-break { border: 0; border-top: 1px solid #e5e5e5; margin: 1.75rem 0; }
     </style>
+
+    <!-- Structured Data (safe basics) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "The Hyphal Knot",
+      "url": "https://thehyphalknot.com/",
+      "logo": "https://thehyphalknot.com/assets/img/theHyphalKnotBlack.svg",
+      "sameAs": [
+        "https://www.youtube.com/@TheHyphalKnot",
+        "https://x.com/hyphalKnotRadio",
+        "https://www.instagram.com/hyphalknotradio",
+        "https://www.facebook.com/hyphalKnot",
+        "https://www.linkedin.com/company/the-hyphal-knot/"
+      ]
+    }
+    </script>
   </head>
   <body id="page-top">
     <a class="skip-link" href="#main">Skip to content</a>
 
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" role="navigation" aria-label="Primary">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      id="mainNav"
+      role="navigation"
+      aria-label="Primary"
+    >
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top" aria-label="Go to top">
-          <img src="assets/img/theHyphalKnotBlack.svg" alt="The Hyphal Knot logo" loading="eager" decoding="async" />
+        <a
+          class="navbar-brand js-scroll-trigger"
+          href="#page-top"
+          aria-label="Go to top"
+        >
+          <img
+            src="assets/img/theHyphalKnotBlack.svg"
+            alt="The Hyphal Knot logo"
+            loading="eager"
+            decoding="async"
+          />
         </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           Menu <i class="fas fa-bars ml-1" aria-hidden="true"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Episodes</a></li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Episodes</a>
+            </li>
             <!-- Blog nav (future) -->
             <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#blog">Blog</a></li> -->
           </ul>
@@ -78,16 +172,24 @@ Faro Digital Studio
 
     <!-- Masthead-->
     <header class="masthead">
-        <div class="container">
+      <div class="container">
         <h1 class="masthead-heading text-uppercase">The<br />Hyphal<br />Knot</h1>
         <!-- Tagline only -->
-        <div class="masthead-subheading">Unraveling the mycelial maze<br>one <span style="color: #D49B0C;">knot</span> at a time.</div>
+        <div class="masthead-subheading">
+          Unraveling the mycelial maze<br />one <span class="hk-gold">knot</span> at a time.
+        </div>
         <div class="cta-row">
-            <a class="btn btn-primary btn-xl text-uppercase" href="https://www.youtube.com/@TheHyphalKnot" target="_blank" rel="noopener noreferrer" aria-label="Listen now on YouTube (opens in new tab)">
-            <i class="fab fa-youtube mr-2" aria-hidden="true"></i> Listen Now
-            </a>
+          <a
+            class="btn btn-primary btn-xl text-uppercase"
+            href="https://www.youtube.com/@TheHyphalKnot"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Coming soon on YouTube (opens in new tab)"
+          >
+            <i class="fab fa-youtube mr-2" aria-hidden="true"></i> Coming Soon
+          </a>
         </div>
-        </div>
+      </div>
     </header>
 
     <main id="main">
@@ -97,84 +199,108 @@ Faro Digital Studio
           <div class="text-center">
             <h2 id="about-title" class="section-heading text-uppercase">About</h2>
             <p class="section-subheading text-muted">
-              We use mushrooms and mycelium as both subject and lens—curiosity first, jargon last. Each conversation branches from real practice: cultivation that actually works, foraging that respects habitats, and lab ideas that escape the lab.
+              <span class="hk-gold">Mushrooms</span> and <span class="hk-gold">mycelium</span> are more than subjects here. They are a way to look at health, food, materials, and the systems we live in. We follow the threads that connect a fruiting body on a log to new textiles in a lab and to practices that keep forests alive.
             </p>
             <p class="section-subheading text-muted">
-              Expect growers with dirt under their nails, researchers with data in hand, and makers testing the edge—from nutrition and cognition to materials and remediation. If it connects to the network, it’s fair game.
+              You will hear cultivators, foragers, scientists, and builders. We move from kitchen grow kits to pilot-scale bioprocessing, from field ID to policy shifts, and from micro benefits to community impact.
+              <br><br>
+              <b><span class="hk-gold">If a path runs through the mycelial maze, we map it.</span></b>
+              <br><br>
             </p>
           </div>
 
           <!-- visual line break before category icons -->
-          <hr class="my-4" aria-hidden="true" />
+          <hr class="section-break" aria-hidden="true" />
 
-          <!-- Topic Buckets -->
+          <br><br>
+
+          <!-- Topic Buckets (icons simplified, brand gold) -->
           <div class="row text-center" role="list">
-            <div class="col-md-3 mb-4" role="listitem">
-              <span class="fa-stack fa-4x" aria-hidden="true">
-                <i class="fas fa-circle fa-stack-2x" style="color:#2C5327"></i>
-                <i class="fas fa-compass fa-stack-1x fa-inverse"></i>
-              </span>
+            <div class="col-md-3 mb-4 topic" role="listitem">
+              <i class="fas fa-seedling topic-icon" aria-hidden="true"></i>
               <h3 class="my-3">Grow & Forage</h3>
-              <p class="text-muted">Practical home-grow (substrates, spawn, fruiting) and fieldcraft—responsible ID in the wild.</p>
+              <p class="text-muted">
+                Practical <span class="hk-gold">cultivation</span>, substrates and spawn, clean workflow, and responsible <span class="hk-gold">ID</span> in the wild.
+              </p>
             </div>
 
-            <div class="col-md-3 mb-4" role="listitem">
-              <span class="fa-stack fa-4x" aria-hidden="true">
-                <i class="fas fa-circle fa-stack-2x" style="color:#2F4C88"></i>
-                <i class="fas fa-brain fa-stack-1x fa-inverse"></i>
-              </span>
+            <div class="col-md-3 mb-4 topic" role="listitem">
+              <i class="fas fa-brain topic-icon" aria-hidden="true"></i>
               <h3 class="my-3">Mind & Body</h3>
-              <p class="text-muted">Cognition, mood, immunity, performance—what’s real, what’s hype, and safe practice.</p>
+              <p class="text-muted">
+                Functional and <span class="hk-gold">gourmet</span> species, nutrition and cognition, safety, and realistic outcomes.
+              </p>
             </div>
 
-            <div class="col-md-3 mb-4" role="listitem">
-              <span class="fa-stack fa-4x" aria-hidden="true">
-                <i class="fas fa-circle fa-stack-2x" style="color:#9F8A6B"></i>
-                <i class="fas fa-rocket fa-stack-1x fa-inverse"></i>
-              </span>
-              <h3 class="my-3">R&D & Tech</h3>
-              <p class="text-muted">Mycelium materials, textiles, bioprocessing, space research, and the weird/cool edge of fungi.</p>
+            <div class="col-md-3 mb-4 topic" role="listitem">
+              <i class="fas fa-flask topic-icon" aria-hidden="true"></i>
+              <h3 class="my-3">Research & Tech</h3>
+              <p class="text-muted">
+                Mycelium <span class="hk-gold">materials</span>, textiles, bioprocessing, and applied research that leaves the bench.
+              </p>
             </div>
 
-            <div class="col-md-3 mb-4" role="listitem">
-              <span class="fa-stack fa-4x" aria-hidden="true">
-                <i class="fas fa-circle fa-stack-2x" style="color:#FB6541"></i>
-                <i class="fas fa-balance-scale fa-stack-1x fa-inverse"></i>
-              </span>
+            <div class="col-md-3 mb-4 topic" role="listitem">
+              <i class="fas fa-balance-scale topic-icon" aria-hidden="true"></i>
               <h3 class="my-3">Policy & Ethics</h3>
-              <p class="text-muted">Psilocybin reform, regulation, access, and the ethics shaping mycology’s future.</p>
+              <p class="text-muted">
+                <span class="hk-gold">Psilocybin</span> and broader regulation, access, equity, and the choices shaping mycology’s future.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Episode Grid-->
-      <section class="page-section bg-light" id="portfolio" aria-labelledby="episodes-title">
+      <section
+        class="page-section bg-light"
+        id="portfolio"
+        aria-labelledby="episodes-title"
+      >
         <div class="container">
           <div class="text-center">
-            <h2 id="episodes-title" class="section-heading text-uppercase">Episodes</h2>
+            <h2 id="episodes-title" class="section-heading text-uppercase">
+              Episodes
+            </h2>
             <p class="section-subheading text-muted">
-              Long-form conversations premiere on YouTube. Short-form clips, field notes, and experiments continue on our socials between releases.
+              We are recording now. Titles and details may evolve while we publish short clips and field notes on socials. Full conversations will land on <span class="hk-gold">YouTube</span>.
             </p>
           </div>
 
           <!-- visual line break before episode tiles -->
-          <hr class="my-4" aria-hidden="true" />
+          <hr class="section-break" aria-hidden="true" />
 
           <div class="row">
             <!-- Episode 3 -->
             <div class="col-lg-4 col-sm-6 mb-4">
               <div class="portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#episodeModal3" aria-haspopup="dialog" aria-controls="episodeModal3" aria-label="Open Episode 3 modal: How Mushrooms Can Save Your Body">
+                <a
+                  class="portfolio-link"
+                  data-toggle="modal"
+                  href="#episodeModal3"
+                  aria-haspopup="dialog"
+                  aria-controls="episodeModal3"
+                  aria-label="Open Episode 3 modal"
+                >
                   <div class="portfolio-hover" aria-hidden="true">
-                    <div class="portfolio-hover-content"><i class="fas fa-clock fa-3x"></i></div>
+                    <div class="portfolio-hover-content">
+                      <i class="fas fa-clock fa-3x"></i>
+                    </div>
                   </div>
-                  <img class="img-fluid d-block mx-auto episode-thumbnail" src="assets/img/episodes/03-cover.jpg" alt="Episode 3 cover: How Mushrooms Can Save Your Body" loading="lazy" decoding="async" />
+                  <img
+                    class="img-fluid d-block mx-auto episode-thumbnail"
+                    src="assets/img/episodes/03-cover.jpg"
+                    alt="Episode 3 cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </a>
                 <div class="portfolio-caption">
                   <p class="portfolio-caption-heading">Episode 3</p>
                   <p class="portfolio-caption-title" style="color:#2F4C88">How Mushrooms Can Save Your Body</p>
-                  <p class="text-muted small mb-0">Therapeutics, protocols, and what’s signal vs. noise in mushroom-based wellness.</p>
+                  <p class="text-muted small mb-0">
+                    Therapeutics, protocols, and what is signal vs noise in mushroom-based wellness. <strong>TBD</strong>.
+                  </p>
                 </div>
               </div>
             </div>
@@ -182,16 +308,33 @@ Faro Digital Studio
             <!-- Episode 2 -->
             <div class="col-lg-4 col-sm-6 mb-4">
               <div class="portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#episodeModal2" aria-haspopup="dialog" aria-controls="episodeModal2" aria-label="Open Episode 2 modal: How Mushrooms Can Save Your Mind">
+                <a
+                  class="portfolio-link"
+                  data-toggle="modal"
+                  href="#episodeModal2"
+                  aria-haspopup="dialog"
+                  aria-controls="episodeModal2"
+                  aria-label="Open Episode 2 modal"
+                >
                   <div class="portfolio-hover" aria-hidden="true">
-                    <div class="portfolio-hover-content"><i class="fas fa-clock fa-3x"></i></div>
+                    <div class="portfolio-hover-content">
+                      <i class="fas fa-clock fa-3x"></i>
+                    </div>
                   </div>
-                  <img class="img-fluid d-block mx-auto episode-thumbnail" src="assets/img/episodes/02-cover.jpg" alt="Episode 2 cover: How Mushrooms Can Save Your Mind" loading="lazy" decoding="async" />
+                  <img
+                    class="img-fluid d-block mx-auto episode-thumbnail"
+                    src="assets/img/episodes/02-cover.jpg"
+                    alt="Episode 2 cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </a>
                 <div class="portfolio-caption">
                   <p class="portfolio-caption-heading">Episode 2</p>
                   <p class="portfolio-caption-title" style="color:#2F4C88">How Mushrooms Can Save Your Mind</p>
-                  <p class="text-muted small mb-0">Neurotropic species, cognition and creativity—benefits, risks, and real-world practice.</p>
+                  <p class="text-muted small mb-0">
+                    Neurotropic species, cognition and creativity, benefits and risks, and real practice. <strong>TBD</strong>.
+                  </p>
                 </div>
               </div>
             </div>
@@ -199,16 +342,33 @@ Faro Digital Studio
             <!-- Episode 1 -->
             <div class="col-lg-4 col-sm-6 mb-4">
               <div class="portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#episodeModal1" aria-haspopup="dialog" aria-controls="episodeModal1" aria-label="Open Episode 1 modal: How Mushrooms Can Save The World">
+                <a
+                  class="portfolio-link"
+                  data-toggle="modal"
+                  href="#episodeModal1"
+                  aria-haspopup="dialog"
+                  aria-controls="episodeModal1"
+                  aria-label="Open Episode 1 modal"
+                >
                   <div class="portfolio-hover" aria-hidden="true">
-                    <div class="portfolio-hover-content"><i class="fas fa-clock fa-3x"></i></div>
+                    <div class="portfolio-hover-content">
+                      <i class="fas fa-clock fa-3x"></i>
+                    </div>
                   </div>
-                  <img class="img-fluid d-block mx-auto episode-thumbnail" src="assets/img/episodes/01-cover.jpg" alt="Episode 1 cover: How Mushrooms Can Save The World" loading="lazy" decoding="async" />
+                  <img
+                    class="img-fluid d-block mx-auto episode-thumbnail"
+                    src="assets/img/episodes/01-cover.jpg"
+                    alt="Episode 1 cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </a>
                 <div class="portfolio-caption">
                   <p class="portfolio-caption-heading">Episode 1</p>
                   <p class="portfolio-caption-title" style="color:#9F8A6B">How Mushrooms Can Save The World</p>
-                  <p class="text-muted small mb-0">Remediation, carbon, soil—where mycelium scales and where it doesn’t (yet).</p>
+                  <p class="text-muted small mb-0">
+                    Remediation, carbon, soil, and where mycelium scales today. <strong>TBD</strong>.
+                  </p>
                 </div>
               </div>
             </div>
@@ -216,8 +376,13 @@ Faro Digital Studio
 
           <!-- Single platform CTA (taller) -->
           <div class="text-center mt-4 cta-under-episodes">
-            <a class="btn btn-primary btn-lg text-uppercase" href="https://www.youtube.com/@TheHyphalKnot" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-youtube mr-2" aria-hidden="true"></i> Listen Now on YouTube
+            <a
+              class="btn btn-primary btn-lg text-uppercase"
+              href="https://www.youtube.com/@TheHyphalKnot"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-youtube mr-2" aria-hidden="true"></i> Coming Soon to YouTube
             </a>
           </div>
         </div>
@@ -242,46 +407,127 @@ Faro Digital Studio
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-4 text-lg-left">
-            Powered by <a href="https://farodigitalstudio.com" target="_blank" rel="noopener noreferrer"><b>Faro Digital Studio</b></a>, © 2025
+            Powered by
+            <a
+              href="https://farodigitalstudio.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><b>Faro Digital Studio</b></a
+            >, © 2025
           </div>
           <div class="col-lg-4 my-3 my-lg-0">
-            <a class="btn btn-dark btn-social mx-2" href="https://x.com/hyphalKnotRadio" target="_blank" rel="noopener noreferrer" aria-label="Hyphal Knot on X/Twitter (opens in new tab)"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-            <a class="btn btn-dark btn-social mx-2" href="https://www.youtube.com/@TheHyphalKnot" target="_blank" rel="noopener noreferrer" aria-label="Hyphal Knot on YouTube (opens in new tab)"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/hyphalknotradio" target="_blank" rel="noopener noreferrer" aria-label="Hyphal Knot on Instagram (opens in new tab)"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/hyphalKnot" target="_blank" rel="noopener noreferrer" aria-label="Hyphal Knot on Facebook (opens in new tab)"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/company/the-hyphal-knot/" target="_blank" rel="noopener noreferrer" aria-label="The Hyphal Knot on LinkedIn (opens in new tab)"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a
+              class="btn btn-dark btn-social mx-2"
+              href="https://x.com/hyphalKnotRadio"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Hyphal Knot on X/Twitter (opens in new tab)"
+              ><i class="fab fa-twitter" aria-hidden="true"></i
+            ></a>
+            <a
+              class="btn btn-dark btn-social mx-2"
+              href="https://www.youtube.com/@TheHyphalKnot"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Hyphal Knot on YouTube (opens in new tab)"
+              ><i class="fab fa-youtube" aria-hidden="true"></i
+            ></a>
+            <a
+              class="btn btn-dark btn-social mx-2"
+              href="https://www.instagram.com/hyphalknotradio"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Hyphal Knot on Instagram (opens in new tab)"
+              ><i class="fab fa-instagram" aria-hidden="true"></i
+            ></a>
+            <a
+              class="btn btn-dark btn-social mx-2"
+              href="https://www.facebook.com/hyphalKnot"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Hyphal Knot on Facebook (opens in new tab)"
+              ><i class="fab fa-facebook-f" aria-hidden="true"></i
+            ></a>
+            <a
+              class="btn btn-dark btn-social mx-2"
+              href="https://www.linkedin.com/company/the-hyphal-knot/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="The Hyphal Knot on LinkedIn (opens in new tab)"
+              ><i class="fab fa-linkedin-in" aria-hidden="true"></i
+            ></a>
           </div>
           <div class="col-lg-4 text-lg-right">
             Sponsored by
-            <a href="https://hyphalhealth.com" target="_blank" rel="noopener noreferrer"><b>Hyphal Health Co LLC</b></a>
+            <a
+              href="https://hyphalhealth.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><b>Hyphal Health Co LLC</b></a
+            >
           </div>
         </div>
       </div>
     </footer>
 
-    <!-- EPISODE MODALS (Release = TBD, Duration = 30–45 min est.) -->
+    <!-- EPISODE MODALS (Release = TBD, no duration) -->
 
     <!-- Episode 3 -->
-    <div class="portfolio-modal modal fade" id="episodeModal3" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="episode3Title" aria-describedby="episode3Desc">
+    <div
+      class="portfolio-modal modal fade"
+      id="episodeModal3"
+      tabindex="-1"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="episode3Title"
+      aria-describedby="episode3Desc"
+    >
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <button class="close-modal" data-dismiss="modal" aria-label="Close modal"><img src="assets/img/close-icon.svg" alt="Close" /></button>
+          <button class="close-modal" data-dismiss="modal" aria-label="Close modal">
+            <img src="assets/img/close-icon.svg" alt="Close" />
+          </button>
           <span class="episode-number">Episode 3</span>
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <div class="modal-body">
-                  <h2 id="episode3Title" class="text-uppercase">How Mushrooms Can Save Your Body</h2>
-                  <p id="episode3Desc" class="item-intro text-muted category-holistic-healing">Unveiling the therapeutic potential of medicinal mushrooms.</p>
-                  <img class="img-fluid d-block mx-auto" src="assets/img/episodes/03-full.jpg" alt="Episode 3 full image: How Mushrooms Can Save Your Body" loading="lazy" decoding="async" />
-                  <p>Immunity, stress, recovery: a grounded walkthrough of what’s signal vs. noise in mushroom-based wellness.</p>
+                  <h2 id="episode3Title" class="text-uppercase">
+                    How Mushrooms Can Save Your Body
+                  </h2>
+                  <p
+                    id="episode3Desc"
+                    class="item-intro text-muted category-holistic-healing"
+                  >
+                    Unveiling the therapeutic potential of medicinal mushrooms.
+                  </p>
+                  <img
+                    class="img-fluid d-block mx-auto"
+                    src="assets/img/episodes/03-full.jpg"
+                    alt="Episode 3 full image"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <p>
+                    Immunity, stress, recovery, and a grounded look at what works.
+                  </p>
                   <ul class="list-inline text-center">
                     <li><strong>Release:</strong> TBD</li>
-                    <li><strong>Category:</strong> <span style="color:#2F4C88;">Holistic Healing</span></li>
-                    <li><strong>Duration:</strong> 30–45 min (est.)</li>
+                    <li>
+                      <strong>Category:</strong>
+                      <span style="color:#2F4C88;">Holistic Healing</span>
+                    </li>
                   </ul>
                   <div class="text-center">
-                    <a href="https://www.youtube.com/@TheHyphalKnot" class="btn btn-primary" role="button" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube mr-1" aria-hidden="true"></i>Watch on YouTube</a>
+                    <a
+                      href="https://www.youtube.com/@TheHyphalKnot"
+                      class="btn btn-primary"
+                      role="button"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="fab fa-youtube mr-1" aria-hidden="true"></i
+                      >Watch on YouTube</a
+                    >
                   </div>
                 </div>
               </div>
@@ -292,26 +538,61 @@ Faro Digital Studio
     </div>
 
     <!-- Episode 2 -->
-    <div class="portfolio-modal modal fade" id="episodeModal2" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="episode2Title" aria-describedby="episode2Desc">
+    <div
+      class="portfolio-modal modal fade"
+      id="episodeModal2"
+      tabindex="-1"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="episode2Title"
+      aria-describedby="episode2Desc"
+    >
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <button class="close-modal" data-dismiss="modal" aria-label="Close modal"><img src="assets/img/close-icon.svg" alt="Close" /></button>
+          <button class="close-modal" data-dismiss="modal" aria-label="Close modal">
+            <img src="assets/img/close-icon.svg" alt="Close" />
+          </button>
           <span class="episode-number">Episode 2</span>
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <div class="modal-body">
-                  <h2 id="episode2Title" class="text-uppercase">How Mushrooms Can Save Your Mind</h2>
-                  <p id="episode2Desc" class="item-intro text-muted category-holistic-healing">Neurotropic species, cognition, creativity—and caution.</p>
-                  <img class="img-fluid d-block mx-auto" src="assets/img/episodes/02-full.jpg" alt="Episode 2 full image: How Mushrooms Can Save Your Mind" loading="lazy" decoding="async" />
-                  <p>We separate hype from evidence and talk practice, safety, and realistic outcomes.</p>
+                  <h2 id="episode2Title" class="text-uppercase">
+                    How Mushrooms Can Save Your Mind
+                  </h2>
+                  <p
+                    id="episode2Desc"
+                    class="item-intro text-muted category-holistic-healing"
+                  >
+                    Neurotropic species, cognition, creativity, and caution.
+                  </p>
+                  <img
+                    class="img-fluid d-block mx-auto"
+                    src="assets/img/episodes/02-full.jpg"
+                    alt="Episode 2 full image"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <p>
+                    We separate hype from evidence and talk practice and safety.
+                  </p>
                   <ul class="list-inline text-center">
                     <li><strong>Release:</strong> TBD</li>
-                    <li><strong>Category:</strong> <span style="color:#2F4C88;">Holistic Healing</span></li>
-                    <li><strong>Duration:</strong> 30–45 min (est.)</li>
+                    <li>
+                      <strong>Category:</strong>
+                      <span style="color:#2F4C88;">Holistic Healing</span>
+                    </li>
                   </ul>
                   <div class="text-center">
-                    <a href="https://www.youtube.com/@TheHyphalKnot" class="btn btn-primary" role="button" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube mr-1" aria-hidden="true"></i>Watch on YouTube</a>
+                    <a
+                      href="https://www.youtube.com/@TheHyphalKnot"
+                      class="btn btn-primary"
+                      role="button"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="fab fa-youtube mr-1" aria-hidden="true"></i
+                      >Watch on YouTube</a
+                    >
                   </div>
                 </div>
               </div>
@@ -322,26 +603,61 @@ Faro Digital Studio
     </div>
 
     <!-- Episode 1 -->
-    <div class="portfolio-modal modal fade" id="episodeModal1" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="episode1Title" aria-describedby="episode1Desc">
+    <div
+      class="portfolio-modal modal fade"
+      id="episodeModal1"
+      tabindex="-1"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="episode1Title"
+      aria-describedby="episode1Desc"
+    >
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <button class="close-modal" data-dismiss="modal" aria-label="Close modal"><img src="assets/img/close-icon.svg" alt="Close" /></button>
+          <button class="close-modal" data-dismiss="modal" aria-label="Close modal">
+            <img src="assets/img/close-icon.svg" alt="Close" />
+          </button>
           <span class="episode-number">Episode 1</span>
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <div class="modal-body">
-                  <h2 id="episode1Title" class="text-uppercase">How Mushrooms Can Save The World</h2>
-                  <p id="episode1Desc" class="item-intro text-muted category-eco-innovations">From remediation to carbon cycles—ecology with teeth.</p>
-                  <img class="img-fluid d-block mx-auto" src="assets/img/episodes/01-full.jpg" alt="Episode 1 full image: How Mushrooms Can Save The World" loading="lazy" decoding="async" />
-                  <p>Practical pathways, real constraints, and where mycelium makes sense at scale.</p>
+                  <h2 id="episode1Title" class="text-uppercase">
+                    How Mushrooms Can Save The World
+                  </h2>
+                  <p
+                    id="episode1Desc"
+                    class="item-intro text-muted category-eco-innovations"
+                  >
+                    From remediation to carbon cycles with real use cases.
+                  </p>
+                  <img
+                    class="img-fluid d-block mx-auto"
+                    src="assets/img/episodes/01-full.jpg"
+                    alt="Episode 1 full image"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <p>
+                    Practical pathways, constraints, and where scale makes sense.
+                  </p>
                   <ul class="list-inline text-center">
                     <li><strong>Release:</strong> TBD</li>
-                    <li><strong>Category:</strong> <span style="color:#9F8A6B;">Eco-Innovations</span></li>
-                    <li><strong>Duration:</strong> 30–45 min (est.)</li>
+                    <li>
+                      <strong>Category:</strong>
+                      <span style="color:#9F8A6B;">Eco-Innovations</span>
+                    </li>
                   </ul>
                   <div class="text-center">
-                    <a href="https://www.youtube.com/@TheHyphalKnot" class="btn btn-primary" role="button" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube mr-1" aria-hidden="true"></i>Watch on YouTube</a>
+                    <a
+                      href="https://www.youtube.com/@TheHyphalKnot"
+                      class="btn btn-primary"
+                      role="button"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="fab fa-youtube mr-1" aria-hidden="true"></i
+                      >Watch on YouTube</a
+                    >
                   </div>
                 </div>
               </div>
